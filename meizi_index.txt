@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>����ͼ - �崿��Ů,�ɰ���Ů,��ŮͼƬ</title>
+<meta name="keywords" content="����ͼ,�崿��Ů,�ɰ���Ů,��ŮͼƬ,������" />
+<link rel="alternate" type="application/rss+xml" href="http://www.meizitu.com/rss.php"/>
+<link rel="alternate" type="application/vnd.wap.xhtml+xml" media="handheld" href="target"/>
+<script type="text/javascript">
+if(/AppleWebKit.*mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+    if(window.location.href.indexOf("?mobile")<0){
+        try{
+            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                window.location.href="http://m.meizitu.com";
+            }else if(/iPad/i.test(navigator.userAgent)){
+                window.location.href="http://m.meizitu.com";
+            }else{
+                window.location.href="http://m.meizitu.com"
+            }
+        }catch(e){}
+    }
+}
+</script>
+<meta name="description" content="������С����,ģ��,������������,����ÿ�춼����ϸѡ,���ʵ�����ͼÿ�춼�в�һ���ĳ���" />
+<link rel="stylesheet" type="text/css" href="http://www.meizitu.com/templets/meizi/css/init.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.meizitu.com/templets/meizi/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.meizitu.com/templets/meizi/css/wp_page_numbers.css"/>
+<script src="http://www.meizitu.com/templets/meizi/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="http://www.meizitu.com/"><span>����ͼ</span></a></h1>
+        <div class="toplink">[ <span style="color:red">����ͼ��ȫƴ���ǳ��üǣ�</span>]&nbsp;<span>΢�źţ�meizitu_com</span><a href="http://www.meizitu.com/aboutus.html" rel="nofollow">��������ͼ</a></div>
+       
+    </div>
+    <div id="container">
+        <div id="subcontent clearfix">
+            <div class="picnew clearfix">
+            
+            <ul>
+              <li><a href="http://www.meizitu.com/a/5502.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/02/limg.jpg" alt="�����崿��ֽ�ڽ�������Ȼ������" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5494.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/07/limg.jpg" alt="����ͼ�������������Ĵ�" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5506.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/06/limg.jpg" alt="Ư��Ůѧ���ڿ��Ǵ�ʲôЬ�أ�" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5508.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/08/limg.jpg" alt="��Ӱ���յ����ߣ����������Ը�" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5485.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/09/limg.jpg" alt="��Щͼ���Կ�һ�꣬���ո���ͼ" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5497.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/02/05/limg.jpg" alt="���Կ������ĺ촽" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5498.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/02/06/limg.jpg" alt="����У԰����ӡ�ǣ��崿����" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5484.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/08/limg.jpg" alt="��˾�����ֱܷ�˭����xiong��" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5505.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/05/limg.jpg" alt="����ӣ�ҵ�Ů�����ǲ�һ��" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5487.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/02/limg.jpg" alt="��������С����Ů������Ϊ�㰮��" width="64" height="64"></a></li>
+<li><a href="http://www.meizitu.com/a/5495.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/02/03/limg.jpg" alt="��һ����������΢�����������崿" width="64" height="64"></a></li>
+
+            </ul> 
+				
+            </div>
+            <div class="tags">
+                <h2>��Ů����:</h2>
+                <span>
+                
+                
+                <a href="http://www.meizitu.com/a/xinggan.html"  target="_blank" title="�Ը�"  >�Ը�</a>
+                <a href="http://www.meizitu.com/a/xinggan.html"  target="_blank" title="ԡ��"  >ԡ��</a>
+                <a href="http://www.meizitu.com/a/sifang.html"  target="_blank" title="˽��"  >˽��</a>
+                <a href="http://www.meizitu.com/a/sifang.html"  target="_blank" title="����"  >����</a>
+                <a href="http://www.meizitu.com/a/qingchun.html"  target="_blank" title="�崿"  >�崿</a>
+                <a href="http://www.meizitu.com/a/qingchun.html"  target="_blank" title="����"  >����</a>
+                <a href="http://www.meizitu.com/a/qingchun.html"  target="_blank" title="����ϵ"  >����ϵ</a>
+                <a href="http://www.meizitu.com/a/meizi.html"  target="_blank" title="������"  >������</a>
+                <a href="http://www.meizitu.com/a/xiaoqingxin.htm"  target="_blank" title="С����"  >С����</a>
+                <a href="http://www.meizitu.com/a/nvshen.html"  target="_blank" title="Ů��"  >Ů��</a>
+                <a href="http://www.meizitu.com/a/qizhi.html"  target="_blank" title="������Ů"  >������Ů</a>
+                <a href="http://www.meizitu.com/a/mote.html"  target="_blank" title="��ģ"  >��ģ</a>
+                <a href="http://www.meizitu.com/a/mote.html"  target="_blank" title="��ģ"  >��ģ</a>
+                <a href="http://www.meizitu.com/a/bijini.html"  target="_blank" title="�Ȼ���"  >�Ȼ���</a>
+                <a href="http://www.meizitu.com/a/baobei.html"  target="_blank" title="���򱦱�"  >���򱦱�</a>
+                <a href="http://www.meizitu.com/a/luoli.html"  target="_blank" title="����"  >����</a>
+                <a href="http://www.meizitu.com/a/wangluo.html"  target="_blank" title="90��"  >90��</a>
+                <a href="http://www.meizitu.com/a/rihan.html"  target="_blank" title="�պ���Ů"  >�պ���Ů</a>
+                <a href="http://www.meizitu.com/a/oumei.html"  target="_blank" title="ŷ����Ů"  >ŷ����Ů</a>
+
+
+
+                
+                </span>
+            </div>
+        </div>
+
+        <div id="pagecontent">
+            <div id="maincontent"> 
+            <!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5508.html" title="��Ӱ���յ����ߣ����������Ը�" target='_blank'>��Ӱ���յ����ߣ����������Ը�</a></h2>
+                        <p>Tags:
+                            �Ը�,����,��Ӱ,����         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">16</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5508.html" title="��Ӱ���յ����ߣ����������Ը�" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/08/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5507.html" title="�����ˡ��ۡ���һ���崿Ů��" target='_blank'>�����ˡ��ۡ���һ���崿Ů��</a></h2>
+                        <p>Tags:
+                            �崿,��Ů,д��,��ȹ         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">15</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5507.html" title="�����ˡ��ۡ���һ���崿Ů��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/07/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5506.html" title="Ư��Ůѧ���ڿ��Ǵ�ʲôЬ�أ�" target='_blank'>Ư��Ůѧ���ڿ��Ǵ�ʲôЬ�أ�</a></h2>
+                        <p>Tags:
+                            ѧ��,�崿,Ư��,�Ǹ�         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">13</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5506.html" title="Ư��Ůѧ���ڿ��Ǵ�ʲôЬ�أ�" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/06/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5505.html" title="����ӣ�ҵ�Ů�����ǲ�һ��" target='_blank'>����ӣ�ҵ�Ů�����ǲ�һ��</a></h2>
+                        <p>Tags:
+                            �崿,ӣ��,����         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">12</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5505.html" title="����ӣ�ҵ�Ů�����ǲ�һ��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/05/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5504.html" title="һ����������Ů�ӣ����ǲ�һ��" target='_blank'>һ����������Ů�ӣ����ǲ�һ��</a></h2>
+                        <p>Tags:
+                            �Ը�,�ŵ�,����,Ů��         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">09</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5504.html" title="һ����������Ů�ӣ����ǲ�һ��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/04/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5503.html" title="����δ�����˶��˵�Ů�ӣ����������Ѿ�����²��" target='_blank'>����δ�����˶��˵�Ů�ӣ����������Ѿ�����²��</a></h2>
+                        <p>Tags:
+                            �Ը�,�崿,����,˽��         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">08</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5503.html" title="����δ�����˶��˵�Ů�ӣ����������Ѿ�����²��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/03/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5502.html" title="�����崿��ֽ�ڽ�������Ȼ��������" target='_blank'>�����崿��ֽ�ڽ�������Ȼ��������</a></h2>
+                        <p>Tags:
+                            ����,�崿,��ֽ         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">07</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5502.html" title="�����崿��ֽ�ڽ�������Ȼ��������" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/02/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5501.html" title="������Ů�ӣ����׵�����д��" target='_blank'>������Ů�ӣ����׵�����д��</a></h2>
+                        <p>Tags:
+                            ����,д��,����,�Ը�         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">06</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5501.html" title="������Ů�ӣ����׵�����д��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/01/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5500.html" title="�°���������ϲ������ ��ɫ������һͩд��" target='_blank'>�°���������ϲ������ ��ɫ������һͩд��</a></h2>
+                        <p>Tags:
+                            ��һͩ,������         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">02</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5500.html" title="�°���������ϲ������ ��ɫ������һͩд��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/08/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+<!--ѭ����ʼ-->
+                <div class="postmeta  clearfix">
+                    <div class="metaRight">
+                        <h2><a href="http://www.meizitu.com/a/5499.html" title="�㳵��Ů���������Ļƽ��" target='_blank'>�㳵��Ů���������Ļƽ��</a></h2>
+                        <p>Tags:
+                            ��ģ,�ܳ�,����         
+                        </p> 
+                    </div>
+                    <div class="metaLeft">
+                        <div class="day">02</div>
+                        <div class="month_Year">03&nbsp;2017</div>
+                    </div>
+                </div>
+                <div class="postContent">
+                <div id="picture">
+                    <p><a href="http://www.meizitu.com/a/5499.html" title="�㳵��Ů���������Ļƽ��" target='_blank'><img src="http://mm.howkuai.com/wp-content/uploads/2017a/02/07/01.jpg" style="width:100%;" /></a></p>
+                </div>
+                </div>
+                <div class="postline"></div>
+                <!--ѭ������-->
+
+                <div class="navigation">
+                    <div id="wp_page_numbers">
+                        <ul>
+                            <li class="thisclass">1</li>
+                            <li><a href='/a/list_1_1.html'>2</a></li>
+                            <li><a href='/a/list_1_2.html'>3</a></li>
+                            <li><a href='/a/list_1_3.html'>4</a></li>
+                            <li><a href='/a/list_1_4.html'>5</a></li>
+                            <li><a href='/a/list_1_5.html'>6</a></li>
+                            <li><a href='/a/list_1_6.html'>7</a></li>
+                            <li><a href='/a/list_1_7.html'>8</a></li>
+                            <li>...</li>
+                            <li><a href='/a/list_1_75.html'>75</a></li>
+                            <li><a href='/a/list_1_76.html'>76</a></li>
+                            <li><a href='/a/list_1_77.html'>77</a></li>
+                            <li><a href='/a/list_1_1.html'>��һҳ</a></li>
+                            <li><a href='/a/list_1_77.html'>ĩҳ</a></li>
+                        </ul>
+                        <div style="float: none; clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+
+<div id="sidebar">
+<!--<div class="weixindiv" style="text-align:center;">
+  <img src="http://www.meizitu.com/images/weixinrwm.gif"/></div>
+-->
+   <div class="cssh6"></div>
+<div class="topmodel">
+    <h2>��Ʒ����</h2>
+    <ul>
+      <li><a href="http://www.meizitu.com/tag/suxiong_17_1.html" style="color:#FD6E9F;" target="_blank" title="����"  >����</a></li>
+      <li><a href="http://www.meizitu.com/tag/shaonv_404_1.html"  target="_blank" title="��Ů" >��Ů</a></li>
+      <li><a href="http://www.meizitu.com/tag/sifang_18_1.html"  target="_blank" title="˽��" >˽��</a></li>
+      <li><a href="http://www.meizitu.com/tag/meitui_13_1.html"  style="color:#FD6E9F;" target="_blank" title="����">����</a></li>
+      <li><a href="http://www.meizitu.com/tag/juru_31_1.html"  style="color:#FD6E9F;" target="_blank" title="����">����</a></li>
+    </ul>
+    <div style="clear:both;"></div>
+    <ul>
+      <li><a href="http://www.meizitu.com/tag/qingchun_32_1.html"  target="_blank" title="�崿">�崿</a></li>
+      <li><a href="http://www.meizitu.com/tag/keai_64_1.html"  target="_blank" title="�ɰ�">�ɰ�</a></li>
+      <li><a href="http://www.meizitu.com/tag/meitun_42_1.html"  target="_blank" title="����">����</a></li>
+      <li><a href="http://www.meizitu.com/tag/quanluo_4_1.html"  target="_blank" title="ȫ��"  rel="nofollow">ȫ��</a></li>
+      <li><a href="http://www.meizitu.com/tag/nvshen_460_1.html"  target="_blank" title="Ů��">Ů��</a></li>
+    </ul>
+    <div style="clear:both;"></div>
+    <ul>
+      <li><a href="http://www.meizitu.com/tag/chengshu_487_1.html"  target="_blank" title="����">����</a></li>
+      <li><a href="http://www.meizitu.com/tag/qizhi_53_1.html"  target="_blank" title="����">����</a></li>
+      <li><a href="http://www.meizitu.com/tag/mote_6_1.html"  target="_blank" title="ģ��">ģ��</a></li>
+      <li><a href="http://www.meizitu.com/tag/banluo_5_1.html"  target="_blank" title="����"  rel="nofollow">����</a></li>
+    </ul>
+  </div>
+   <div class="cssh6"></div>
+  <div class="hotpic clearfix">
+    <h3>���ȵĸ�������</h3>
+        <ul>
+<li><a href="http://www.meizitu.com/a/5500.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/08/limg.jpg" alt="�°���������ϲ������ ��ɫ����"></a></li>
+<li><a href="http://www.meizitu.com/a/5502.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/03/02/limg.jpg" alt="�����崿��ֽ�ڽ�������Ȼ������"></a></li>
+<li><a href="http://www.meizitu.com/a/5482.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/06/limg.jpg" alt="����������Ů������Ȼ����ͯ��"></a></li>
+<li><a href="http://www.meizitu.com/a/5494.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/07/limg.jpg" alt="����ͼ�������������Ĵ�"></a></li>
+<li><a href="http://www.meizitu.com/a/5493.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/06/limg.jpg" alt="�⼡����pose�����ú���"></a></li>
+<li><a href="http://www.meizitu.com/a/5484.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/08/limg.jpg" alt="��˾�����ֱܷ�˭����xiong��"></a></li>
+<li><a href="http://www.meizitu.com/a/5481.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/05/limg.jpg" alt="���ӣ��˹������� - ��ҹ����"></a></li>
+<li><a href="http://www.meizitu.com/a/5483.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/07/limg.jpg" alt="ÿ��Ů�����ﶼ��һ��������"></a></li>
+<li><a href="http://www.meizitu.com/a/5479.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/03/limg.jpg" alt="�������ü�����Ӻö���"></a></li>
+<li><a href="http://www.meizitu.com/a/5485.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2016a/09/09/limg.jpg" alt="��Щͼ���Կ�һ�꣬���ո���ͼ"></a></li>
+<li><a href="http://www.meizitu.com/a/5486.html" target="_blank"><img src="http://mm.howkuai.com/wp-content/uploads/2017a/01/01/limg.jpg" alt="���˽ڸչ�����˵��������TT����"></a></li>
+
+            </ul> 
+    <ul>
+      <li><a href="http://www.sifangsex.com/tuku/?ad=meizitu1" target="_blank" rel="nofollow"><img src="http://www.meizitu.com/wp-content/uploads/img/hezuo01.jpg" alt=""></a></li>
+      <li><a href="http://www.sifangsex.com/tuku/?ad=meizitu2" target="_blank" rel="nofollow"><img src="http://www.meizitu.com/wp-content/uploads/img/hezuo02.jpg" alt=""></a></li>
+    </ul>
+  </div>
+  <div class="cssh6"></div>
+  <div class="lastest clearfix">
+    <h3>���¸���</h3>
+    <ul>
+      <li><a href="http://www.meizitu.com/a/5506.html">Ư��Ůѧ���ڿ��Ǵ�ʲôЬ�أ�</a></li>
+<li><a href="http://www.meizitu.com/a/5500.html">�°���������ϲ������ ��ɫ������</a></li>
+<li><a href="http://www.meizitu.com/a/5492.html">����ֻҪ���ĺã�ɳ̲������ʱ����</a></li>
+<li><a href="http://www.meizitu.com/a/5491.html">�ƾɷɻ�Ҳ�������»���</a></li>
+<li><a href="http://www.meizitu.com/a/5488.html">ţ��Ů�����������Ѿ��Ե���ǧլ��</a></li>
+<li><a href="http://www.meizitu.com/a/5504.html">һ����������Ů�ӣ����ǲ�һ��</a></li>
+<li><a href="http://www.meizitu.com/a/5501.html">������Ů�ӣ����׵�����д��</a></li>
+<li><a href="http://www.meizitu.com/a/5497.html">���Կ������ĺ촽</a></li>
+
+      <li><a href="http://www.sifangsex.com/a/qinggan/2013/807.html?ad=meizitu3" target="_blank" rel="nofollow">��������Ů�˵�����ϰ��</a></li>
+      <li><a href="http://www.sifangsex.com/a/qinggan/2013/758.html?ad=meizitu3" target="_blank" rel="nofollow">�ѵ����Ը��·���������һ��</a></li>
+      <li><a href="http://www.sifangsex.com/a/jiankang/2013/135.html?ad=meizitu3" target="_blank" rel="nofollow">Ů�Ե���ο��ȫ��ע��</a></li>
+      <li><a href="http://www.sifangsex.com/a/wenhua/2013/670.html?ad=meizitu3" target="_blank" rel="nofollow">���˾��԰ѳֲ�ס�İ�ʾ</a></li>
+    </ul>
+  </div>
+  <div class="cssh6"></div>
+    <div class='flinkTag'>
+    <ul>
+      
+      <li class="flink_1">��������</li>
+      
+      <li class="flink_2">��������</li>
+      
+    </ul>
+  </div>
+  <div id='flink_1' class='flink' style="display:block;"> 
+    <a href='http://www.sifangsex.com/' target='_blank'>����˽����</a> 
+    
+    <a href='http://www.mmxzg.com/' target='_blank'>�Ը���ŮͼƬ</a> 
+     </div>
+  <div id='flink_2' class='flink'> 
+    <a href='http://www.spiritsoft.cn/' target='_blank'>��������</a> 
+    
+    <a href='http://www.5542.cc' target='_blank'>��Ůд��</a> 
+    
+    <a href='http://www.xiaozhishi.net' target='_blank'>С֪ʶ</a> 
+    
+    <a href='http://www.mtu5.com' target='_blank'>��ͼ��</a> 
+    
+    <a href='http://www.haoxiao8.com' target='_blank'>��Ц��</a> 
+    
+    <a href='http://www.27270.com' target='_blank'>ͼƬ��ȫ</a> 
+    
+    <a href='http://www.17786.com' target='_blank'>��ŮͼƬ</a> 
+     </div>
+  <script type="text/javascript">
+		$(document).ready(function(){
+			$("div.flinkTag li:first").addClass("this");
+			$("div.flinkTag li").click(function () {
+			var content_show = $(this).attr("class");
+			$("div.flinkTag li").removeClass("this");
+			$(this).addClass("this");
+			$("div.flink").hide();
+			$("#"+content_show).show();
+			return false;
+			});
+		});
+	</script>
+  <div class="cssh6"></div>
+</div>
+</div>
+</div>
+<div id="footer">
+  <p>���漰������������ϵ��meizitu@126.com</p>
+  <p>��վͼƬ��Դ����ӰʦͶ�弰���磬�����ַ�������Ȩ�棬����ϵ����ɾ����</p>
+  <p>2010 - 2016 ����ͼwww.meizitu.com ��Ȩ���У���վ���Ƽ������Ͻ���Ȩ  ��ICP��11027911�� ��</p>
+</div>
+<div id="contentbottom"></div>
+</div>
+<script>
+(function() {
+var $backToTopTxt = "���ض���", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+
+        .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+
+            $("html, body").animate({ scrollTop: 0 }, 120);
+
+    }), $backToTopFun = function() {
+
+var st = $(document).scrollTop(), winh = $(window).height();
+
+        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();
+
+//IE6�µĶ�λ
+
+if (!window.XMLHttpRequest) {
+
+            $backToTopEle.css("top", st + winh - 166);
+
+        }
+
+    };
+
+    $(window).bind("scroll", $backToTopFun);
+
+    $(function() { $backToTopFun(); });
+
+})();
+
+ $(function(){    
+        window.onresize = function(){
+            footview();
+        }
+        function footview(){
+            if(view().h>662){            
+                $('#contentbottom').addClass('foot_ch');
+            }
+            if(view().h<662){            
+                $('#contentbottom').removeClass('foot_ch');
+            }
+        }
+        footview();
+    });
+    
+    function view(){
+        return {
+            w: document.documentElement.clientWidth,
+            h: document.documentElement.clientHeight    
+        }
+    }
+
+</script> 
+<!--<script src="http://f.f70123.com/cpf/index.php?50056_1|1|1__0_0" charset="gb2312"></script>--!>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30056528'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30056528' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
