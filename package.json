@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "t": "node ./script/test.js",
+    "t": "node ./script/test/test.js",
     "start": "node  ./script/meizi/index.js"
   },
   "author": "",
@@ -22,7 +22,8 @@
     "sync-request": "^4.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-preset-es2015": "^6.22.0"
   }
 }

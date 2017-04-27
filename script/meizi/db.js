@@ -14,7 +14,6 @@ var connectDB = ()=>{
       return resolve(db);
     })
   })
-
 }
 
 

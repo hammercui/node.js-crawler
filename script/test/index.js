@@ -154,7 +154,7 @@ function analysisMezi(html) {
 
 
 function downloadImg() {
-  var json = require("./../data/index.json");
+  var json = require("./../../data/index.json");
   Promise.all(
     json.map(imageItem=>{
       //下载
@@ -183,6 +183,6 @@ function downloadImg() {
   });
 }
 
-//captureMeizi();
+captureMeizi();
 //downloadImg();
-downloadImageWithProgress();
+//downloadImageWithProgress();

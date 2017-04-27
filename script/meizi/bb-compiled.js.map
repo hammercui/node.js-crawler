@@ -1,0 +1,1 @@
+{"version":3,"sources":["bb.js"],"names":[],"mappings":";;;;;AAAA;;;AAGe,MAAM,CAAN,CAAO;;AAEpB,gBAAa;AACX,SAAK,EAAL,GAAU,CAAV;AACA,SAAK,EAAL,GAAU,CAAV;AACD;AACD,SAAM,CAEL;AARmB;kBAAD,C","file":"bb-compiled.js","sourcesContent":["/**\n * Created by cly on 2017/4/26.\n */\nexport default class B{\n\n  constructor(){\n    this.aa = 1;\n    this.bb = 2;\n  }\n  test(){\n\n  }\n}"]}

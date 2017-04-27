@@ -1,14 +1,19 @@
 /**
  * Created by cly on 17/3/22.
  */
-
+"use strict";
 var request = require("../api/request");
 var iconv = require('iconv-lite');
-var cheerio = require('cheerio');
 var cookie = "safedog-flow-item=4D72DD1431AFCC72F5CEC36D4F5EF70B";
 var baseUrl = 'http://www.meizitu.com/';
 var fs = require('fs');
-var dao = require("./db");
+
+//var dao = require("./db");
+var crawlerFactory = require("./crawlerFactory");
+var crawler = new crawlerFactory();
+
+
+
 //封装html的request头部
 var htmlHeaders = {
   "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -44,10 +49,10 @@ const index_options = {
   responseType:"arraybuffer",
   timeout: 10000,
   headers: htmlHeaders,
-  proxy: {
-    host: '127.0.0.1',
-    port: 9743,
-  },//代理
+  // proxy: {
+  //   host: '127.0.0.1',
+  //   port: 9743,
+  // },//代理
 };
 
 
@@ -55,10 +60,10 @@ var image_options = {
   timeout: 10000,
   responseType:"stream",//二进制
   headers:imageHeaders,
-  proxy: {
-    host: '127.0.0.1',
-    port: 9743,
-  },//代理
+  // proxy: {
+  //   host: '127.0.0.1',
+  //   port: 9743,
+  // },//代理
 }
 
 
@@ -68,7 +73,6 @@ function captureMeizi() {
   request(index_options).get(baseUrl)
     .then(response=>{
       if(response.status == 200){
-        //console.log("response头部",response.headers);
         return Promise.resolve(response.data);
       }
       else{
@@ -76,12 +80,12 @@ function captureMeizi() {
         return Promise.reject(error);
       }
     })
-    .then(html=>{
-      var newhtml = iconv.decode(html,"gb2312");
-       analysisMezi(newhtml);
-      //console.log("response",newhtml);
-      return Promise.resolve();
-    })
+    .then(resolve=>{
+      var html = iconv.decode(resolve,"gb2312");
+       analysisMezi(html);
+    },
+      reject=>Promise.reject(reject)
+    )
     .catch(error=>{
       console.log("错误信息："+error);
     })
@@ -89,49 +93,34 @@ function captureMeizi() {
 
 function analysisMezi(html) {
   //打开数据库
-  var dbInstance;
-  dao.connectDB()
-    .then(db=>{
-      dbInstance = db;
-    }).catch(error=>console.log(error));
-
-
-  var $ = cheerio.load(html); //引入cheerio的方法。这样的引入方法可以很好的结合jQuery的用法。
-  var postContentList = $("#maincontent").find(".postContent");
-  var imageArray = new Array();
-  postContentList.each(function (idx,element) {
-    var postContent = $(this);
-    var a = $(postContent).find("a");
-    var href = $(a).attr("href");
-    var title = $(a).attr("title");
-    var img = $(a).find("img");
-    var imgSrc = $(img).attr("src");
-    var tempArray = imgSrc.split("uploads");
-    var imgNameTemp = tempArray[tempArray.length - 1].toString();
-    var imgName = imgNameTemp.replace(/\//g,"");
-
-    var imageItem = {href:href,title:title,imgSrc:imgSrc,imgName:imgName};
-    dao.selectData(dbInstance,"homePage",{imgSrc:imgSrc})
-      .then(result=>{
-
-      })
-      .catch(error=>{
-        console.log("查询",error);
-        dao.insertData(dbInstance,"homePage",imageItem)
-          .then(result=>{
-            console.log("插入数据",result);
-          })
-          .then(error=>{
-            console.log("插入",error);
-          })
-      });
-
-    imageArray.push(imageItem);
-  })
-  console.log(imageArray);
+ // var dbInstance;
+  // dao.connectDB()
+  //   .then(db=>{
+  //     dbInstance = db;
+  //   }).catch(error=>console.log(error));
+  //
+  // console.log(imageArray);
+  //
+  // dao.selectData(dbInstance,"homePage",{imgSrc:imgSrc})
+  //   .then(result=>{
+  //
+  //   })
+  //   .catch(error=>{
+  //     console.log("查询",error);
+  //     dao.insertData(dbInstance,"homePage",imageItem)
+  //       .then(result=>{
+  //         console.log("插入数据",result);
+  //       })
+  //       .then(error=>{
+  //         console.log("插入",error);
+  //       })
+  //   });
 
   //写入文档
-  var str = JSON.stringify(imageArray);
+  //var str = JSON.stringify(imageArray);
+
+  console.log(crawler.analysisIndex(html));
+
   // fs.writeFile("../../data/index.json",str,function (error) {
   //   if(error){
   //     console.log('写入json失败：'+error.toString());
@@ -157,7 +146,6 @@ function downloadImg() {
               var error = {status:response.status,msg:response.statusText};
               return Promise.reject(error);
             }
-
         })
         .then(body=>{
           //创建写入流
