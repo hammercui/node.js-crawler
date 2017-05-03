@@ -3,7 +3,7 @@
  */
 "use strict";
 
-var _crawlerFactoryCompiled = require("./crawlerFactory-compiled");
+var _crawlerFactoryCompiled = require("./analysisFactory-compiled");
 
 var _crawlerFactoryCompiled2 = _interopRequireDefault(_crawlerFactoryCompiled);
 

@@ -3,175 +3,110 @@
  */
 "use strict";
 var request = require("../api/request");
-var iconv = require('iconv-lite');
-var cookie = "safedog-flow-item=4D72DD1431AFCC72F5CEC36D4F5EF70B";
-var baseUrl = 'http://www.meizitu.com/';
 var fs = require('fs');
+var analysisFactory = require("./analysisFactory");
+var dao  = require("./odm_db");
+var capture = require("./captureFactory");
+var logger = require('./logFactory');
+var utils = require("./utils");
 
-//var dao = require("./db");
-var crawlerFactory = require("./crawlerFactory");
-var crawler = new crawlerFactory();
+var analysis = new analysisFactory();
+var baseUrl = 'http://www.meizitu.com/';
 
-
-
-//封装html的request头部
-var htmlHeaders = {
-  "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-  "Accept-Encoding":"gzip, deflate, sdch",
-  "Accept-Language":"zh-CN,zh;q=0.8",
-  "Cache-Control":"max-age=0",
-  "Connection":"keep-alive",
- // "Cookie":cookie,
-  "Upgrade-Insecure-Requests":1,
-  "Host":"www.meizitu.com",
-  "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) " +
-  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
-};
-
-//封装image的request头部
-var imageHeaders = {
-  "Accept":"image/webp,image/*,*/*;q=0.8",
-  "Accept-Encoding":"gzip, deflate, sdch",
-  "Accept-Language":"zh-CN,zh;q=0.8",
-  "Cache-Control":"max-age=0",
-  "Connection":"keep-alive",
-  "Cookie":cookie,
-  "Upgrade-Insecure-Requests":1,
-  "Host":"mm.howkuai.com",
-  "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) " +
-  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
-};
-//编码格式
-var charset = "gb2312";
-
-
-const index_options = {
-  responseType:"arraybuffer",
-  timeout: 10000,
-  headers: htmlHeaders,
-  // proxy: {
-  //   host: '127.0.0.1',
-  //   port: 9743,
-  // },//代理
-};
-
-
-var image_options = {
-  timeout: 10000,
-  responseType:"stream",//二进制
-  headers:imageHeaders,
-  // proxy: {
-  //   host: '127.0.0.1',
-  //   port: 9743,
-  // },//代理
+function  captureHome() {
+    capture.captureHtml(baseUrl)
+      .then(html=>analysis.analysisIndex(html))
+      .then(homeList=>{
+        return dao.insertHomeList(homeList);
+      })
+      .then(success=>{
+        logger.info("insert success")
+      })
+      .catch(error=>{
+        logger.warn("抓取"+baseUrl+"失败",error);
+      })
 }
 
 
-
-//抓取妹子
-function captureMeizi() {
-  request(index_options).get(baseUrl)
-    .then(response=>{
-      if(response.status == 200){
-        return Promise.resolve(response.data);
+function captureList(index) {
+  var indexUrl = getIndexUrl(index);
+  var url = baseUrl+indexUrl;
+  logger.info(url,utils.getTime(),"start",url);
+  var retryTime = 0;
+  capture.captureHtml(url)
+    .then(html=>{
+        return analysis.analysisThumbList(html);
+    })
+    .then(list=>{
+      logger.info(utils.getTime(),"capture success,ready insert list length:",list.length);
+      if(list&&list.length>0)
+        return dao.insertDetailList(list);
+      else{
+        return Promise.resolve("list为空，直接插入成功");
+      }
+    })
+    .then(success=>{
+      logger.info(utils.getTime(),"insert success".concat(indexUrl,success));
+      logger.info(utils.getTime(),"end",url);
+      //开始休眠
+      var sleepTime = Math.floor(Math.random()*10000);
+      logger.info("开始延迟",sleepTime,"毫秒");
+      return new Promise(resolve=>setTimeout(()=>resolve(),sleepTime))
+    })
+    .then(()=>{
+      logger.info("延时结束");
+      //下一个循环
+      var curIndex = index + 1;
+      if(curIndex < 35)
+        captureList(curIndex);
+      else{
+        logger.info("抓取到页码".concat(index,",抓取完成"));
+        process.exit()
+      }
+    })
+    .catch(error=>{
+      logger.warn("error 抓取 "+url+"失败",error);
+      retryTime++;
+      if(retryTime < 4){
+        logger.info("第".concat(retryTime,"次重试"));
+        captureList(index);
       }
       else{
-        var error = {status:response.status,msg:response.statusText};
-        return Promise.reject(error);
+        logger.info("已经重试".concat(retryTime,"次了，停止"));
+        process.exit()
       }
-    })
-    .then(resolve=>{
-      var html = iconv.decode(resolve,"gb2312");
-       analysisMezi(html);
-    },
-      reject=>Promise.reject(reject)
-    )
-    .catch(error=>{
-      console.log("错误信息："+error);
+
     })
 }
 
-function analysisMezi(html) {
-  //打开数据库
- // var dbInstance;
-  // dao.connectDB()
-  //   .then(db=>{
-  //     dbInstance = db;
-  //   }).catch(error=>console.log(error));
-  //
-  // console.log(imageArray);
-  //
-  // dao.selectData(dbInstance,"homePage",{imgSrc:imgSrc})
-  //   .then(result=>{
-  //
-  //   })
-  //   .catch(error=>{
-  //     console.log("查询",error);
-  //     dao.insertData(dbInstance,"homePage",imageItem)
-  //       .then(result=>{
-  //         console.log("插入数据",result);
-  //       })
-  //       .then(error=>{
-  //         console.log("插入",error);
-  //       })
-  //   });
-
-  //写入文档
-  //var str = JSON.stringify(imageArray);
-
-  console.log(crawler.analysisIndex(html));
-
-  // fs.writeFile("../../data/index.json",str,function (error) {
-  //   if(error){
-  //     console.log('写入json失败：'+error.toString());
-  //     return ;
-  //   }
-  //   console.log('写入json成功：');
-  // });
-  //写入数据库
+function getIndexUrl(index) {
+  return "a/".concat("list_1_",index,".html");
 
 }
 
 
+//captureHome();
+captureList(1);
 
-function downloadImg() {
-  var json = require("../../data/index.json");
-  Promise.all(json.map(imageItem=>{
-      return request(image_options).get(imageItem.imgSrc)
-        .then(response=>{
-            if(response.status == 200){
-              return Promise.resolve(response.data)
-            }
-            else{
-              var error = {status:response.status,msg:response.statusText};
-              return Promise.reject(error);
-            }
-        })
-        .then(body=>{
-          //创建写入流
-          var writerStream = fs.createWriteStream("../../image/"+imageItem.imgName);
-          writerStream.on('finish', function() {
-            console.log(imageItem.imgName+"下载成功！");
-            return Promise.resolve(imageItem);
-          });
+function testAll() {
+  var array = [1,2,3,4];
+  var promiseArray = array.map((t,idx)=>{
+    return Promise.resolve(t);
+  })
 
-          writerStream.on('error', function(err){
-            console.log(err.stack);
-            console.log(imageItem.imgName+"下载失败！",err.stack);
-            return Promise.reject(imageItem.imgSrc);
-          });
-          body.pipe(writerStream);
-        })
-  }))
-    .then(result=>{
-      //result是数组
-      console.log("result success:",result);
-    })
-    .catch(error=>{
-      console.log("result error:",error);
-    });
+
+  Promise.all(promiseArray).then(list=>{
+    logger.info(list);
+  })
 }
 
+//
+// dao.selectDetail({id:'5903'}).then(resolve=>{
+//   logger.info("success",resolve);
+// },reject=>{
+//   logger.info("reject",reject);
+// })
 
-captureMeizi();
-//downloadImg();
+//testAll();
+
+//logger.info(utils.getTime());
