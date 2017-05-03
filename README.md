@@ -8,7 +8,7 @@
  	- [mongoDB的启动](###mongoDB的启动) 
  	- [mongoDB的文档与集合](###mongoDB的文档与集合)
  	- [Mongoose](###Mongoose)
- 	- [日志框架选择](### 日志框架选择)
+ 	- [日志框架选择](###日志框架选择)
  + [JavaScript注意事项](##JavaScript注意事项)
 
 3. [启动服务](#启动服务)
@@ -23,7 +23,7 @@
 # 开发日志
 ## mongoDB搭配Mongoose存储数据
 
-###mongoDB的启动：
+### mongoDB的启动：
 
 1 mac启动mongoDB服务：
 
@@ -35,7 +35,7 @@
 
 打开另一个终端，输入`Application/mongodb/bin`,回车，输入`./mongo`,这时候可以用命令行操作数据库
 
-###mongoDB的文档与集合：
+### mongoDB的文档与集合：
 
 1 文档:
 
@@ -69,7 +69,7 @@ MongoDb区分类型，大小写。
 
 
 
-###Mongoose
+### Mongoose
 >Mongoose是MongoDB的js版本的orm框架。现在叫odm意思就是object-documents-mapping对象文档映射
 
 **注意事项：**
