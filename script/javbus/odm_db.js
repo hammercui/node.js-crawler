@@ -2,8 +2,8 @@
  * Created by cly on 2017/4/27.
  */
 "use strict";
-var {ERR_DB_DUP} = require("././errorFactory");
-var DB_CONN_STR = 'mongodb://localhost:27017/meizi'; // 数据库为 meizi
+var {ERR_DB_DUP} = require("../core/errorFactory");
+var DB_CONN_STR = 'mongodb://localhost:27017/javbus'; // 数据库为 javbus
 // 首先引入 mongoose 这个模块
 var mongoose = require('mongoose');
 var logger = require('./../core/logFactory');
@@ -15,7 +15,7 @@ mongoose.Promise = global.Promise;
 
 
 db.once('open',function (callback) {
-  console.log("MongoDB Opened!");
+  console.log("javbus MongoDB Opened!");
 
 });
 
@@ -26,41 +26,32 @@ db.on('error',function (callback) {
 
 
 db.on('disconnected', function () {
-  console.log('Mongoose connection disconnected');
+  console.log('javbus  Mongoose connection disconnected');
   process.exit();
 });
 
 
 
 const Schema = mongoose.Schema;
-//首页home的对象文档映射
-const homeSchema = Schema({
-  href:String,
-  title:String,
-  thumb:String,
-  imgName:String,
-  tag:Array,
-});
+
 const detailSchema = Schema({
   href:String,
   title:String,
   thumb:String,
   tag:Array,
-  id:{type:Number,unique:true,required:true,index:true},
-  images:Array,
+  id:{type:String,unique:true,required:true,index:true},
   date:String,
+  cover:String,
+  mvLength:String,
+  mvProducers:String,
+  mvPublisher:String,
+  mvDirector:String,
+  mvActors:Array,
+  mvImageSmall:Array,
+  mvImageBig:Array,
+  mvMagnets:Array,
 });
 
-//然后创建home的Model
-var homeModel = mongoose.model('home',homeSchema);
-
-/**
- * 保存home的数据
- * @param list
- */
-function insertHomeList(list) {
-  return saveList(homeModel,list);
-}
 
 var detailModel = mongoose.model("detail",detailSchema);
 /**
@@ -170,7 +161,6 @@ function select(Model,query) {
 
 
 module.exports = {
-  insertHomeList,
   insertDetailList,
   selectDetail,
   selectDetailPage,

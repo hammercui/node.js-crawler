@@ -2,30 +2,16 @@
  * Created by cly on 17/3/22.
  */
 "use strict";
-var request = require("./request");
+var request = require("../core/request");
 var fs = require('fs');
 var analysisFactory = require("./analysisFactory");
 var dao  = require("./odm_db");
 var capture = require("./captureFactory");
 var logger = require('./../core/logFactory');
-var utils = require("./../core/utils");
+var utils = require("../core/utils");
 
 var analysis = new analysisFactory();
-var baseUrl = 'http://www.meizitu.com/';
-
-function  captureHome() {
-    capture.captureHtml(baseUrl)
-      .then(html=>analysis.analysisIndex(html))
-      .then(homeList=>{
-        return dao.insertHomeList(homeList);
-      })
-      .then(success=>{
-        logger.info("insert success")
-      })
-      .catch(error=>{
-        logger.warn("抓取"+baseUrl+"失败",error);
-      })
-}
+var baseUrl = 'https://www.javbus.com/';
 
 
 function captureList(index) {
@@ -56,31 +42,32 @@ function captureList(index) {
     .then(()=>{
       logger.info("延时结束");
       //下一个循环
-      var curIndex = index + 1;
-      if(curIndex < 35)
-        captureList(curIndex);
-      else{
-        logger.info("抓取到页码".concat(index,",抓取完成"));
-        process.exit()
-      }
+      // var curIndex = index + 1;
+      // if(curIndex < 35)
+      //   captureList(curIndex);
+      // else{
+      //   logger.info("抓取到页码".concat(index,",抓取完成"));
+      //   process.exit()
+      // }
+
     })
     .catch(error=>{
       logger.warn("error 抓取 "+url+"失败",error);
-      retryTime++;
-      if(retryTime < 4){
-        logger.info("第".concat(retryTime,"次重试"));
-        captureList(index);
-      }
-      else{
-        logger.info("已经重试".concat(retryTime,"次了，停止"));
-        process.exit()
-      }
+      // retryTime++;
+      // if(retryTime < 4){
+      //   logger.info("第".concat(retryTime,"次重试"));
+      //   captureList(index);
+      // }
+      // else{
+      //   logger.info("已经重试".concat(retryTime,"次了，停止"));
+      //   process.exit()
+      // }
 
     })
 }
 
 function getIndexUrl(index) {
-  return "a/".concat("list_1_",index,".html");
+  return "page/".concat(index);
 
 }
 

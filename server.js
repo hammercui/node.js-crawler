@@ -2,11 +2,15 @@
  * Created by cly on 2017/5/3.
  */
 
-var meiziDao  = require("./meizi/odm_db");
-var logger = require("./meizi/logFactory");
+var meiziDao  = require("./script/meizi/odm_db");
+var logger = require("./script/core/logFactory");
 var express = require('express');
 var app = express();
 
+//提供静态资源目录服务
+var publicPath = __dirname+"/public";
+logger.info("publicPath",publicPath);
+app.use(express.static(publicPath));
 
 // meiziDao.selectDetailPage(0,10)
 //   .then(
@@ -14,7 +18,7 @@ var app = express();
 //     reject=>{logger.info("error",reject)}
 //   )
 
-app.get('/', function (req, res) {
+app.get('/meizi/', function (req, res) {
   if(!req.query){
     res.send({code:500,msg:"not has property  "});
     return;

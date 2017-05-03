@@ -9,7 +9,7 @@ var _crawlerFactoryCompiled2 = _interopRequireDefault(_crawlerFactoryCompiled);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var request = require("../api/request");
+var request = require("./request");
 var iconv = require('iconv-lite');
 var cookie = "safedog-flow-item=4D72DD1431AFCC72F5CEC36D4F5EF70B";
 var baseUrl = 'http://www.meizitu.com/';

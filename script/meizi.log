@@ -14,3 +14,6 @@
 {"level":"info","message":"detailModel query: start:0 offset：10","timestamp":"2017-05-03 14:40:22:837"}
 {"level":"info","message":"detailModel query: start:10 offset：10","timestamp":"2017-05-03 14:40:30:164"}
 {"level":"info","message":"detailModel query: start:20 offset：10","timestamp":"2017-05-03 14:40:39:028"}
+{"level":"info","message":"publicPath /Users/cly/Desktop/nodeProject/crawlerTestpublic","timestamp":"2017-05-03 15:13:06:499"}
+{"level":"info","message":"publicPath /Users/cly/Desktop/nodeProject/crawlerTest/public","timestamp":"2017-05-03 15:13:21:354"}
+{"level":"info","message":"publicPath /Users/cly/Desktop/nodeProject/crawlerTest/public","timestamp":"2017-05-03 15:17:37:083"}

@@ -4,7 +4,7 @@
 
 var cheerio  = require("cheerio");
 var capture = require("./captureFactory");
-var logger = require("./logFactory");
+var logger = require("./../core/logFactory");
 var _ = require("lodash");
 var dao = require("./odm_db");
 

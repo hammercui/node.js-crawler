@@ -6,7 +6,7 @@ var cheerio = require('cheerio');
 var request = require("request");
 var requestProgress = require("request-progress");
 var download  = require("download");
-//var request = require("./api/request");
+//var request = require("./core/request");
 var iconv = require('iconv-lite');
 var fs = require('fs');
 //编码格式

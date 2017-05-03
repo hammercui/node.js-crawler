@@ -9,21 +9,25 @@
  		* [mongoDB的文档与集合](#mongoDB的文档与集合)
  		* [Mongoose](#Mongoose)
  		* [日志框架选择](#日志框架选择)
- 	* [JavaScript注意事项](#JavaScript注意事项)
+ 	*  [JavaScript注意事项](#JavaScript注意事项)
 
 * [3.启动服务](#启动服务)
+	* [爬虫服务](#爬虫服务)
+	* [api服务](#api服务) 
 
 # 目标
 
 * 爬取图片，并下载保存文件
 * 爬取数据，并存入mongoDB
 
-- [ x ] 已完成http://www.meizitu.com/的抓取工作
+- [ x ] 已完成[http://www.meizitu.com/](http://www.meizitu.com/)的抓取工作
+- [ x ] 准备javbus的抓取工作
 
 # 开发日志
+
 ## mongoDB搭配Mongoose存储数据
 
-### mongoDB的启动：
+### mongoDB的启动
 
 1 mac启动mongoDB服务：
 
@@ -35,7 +39,7 @@
 
 打开另一个终端，输入`Application/mongodb/bin`,回车，输入`./mongo`,这时候可以用命令行操作数据库
 
-### mongoDB的文档与集合：
+### mongoDB的文档与集合
 
 1 文档:
 
@@ -176,6 +180,27 @@ module.exports = logger;
 ### es6的常见问题
 es6如何转译es5,参见我的blog,
 
+### 文件写入写出
+常见的问题就是转码的问题了，一般很多页面都是gb2312,我们需要借助`iconv-lite`进行编码转换
+
+```
+  var html = iconv.decode(response.body,"gb2312") ;
+```
+### jquery的遍历
+在使用jquery对象遍历时，测试发现`forEach`,`map`等语法不可用，只能使用老旧的`each`语法
+
+```
+each(function(index,element)){
+
+}
+
+```
+
+### js拼接类页面的解决方法
+
+很多页面为了解决被爬的问题，使用了ajax异步加载，部分数据通过ajax传递，这样普通的get请求获得的页面就不能完整解析了。
+
+怎么办呢，我发现了[PhantomJS](http://phantomjs.org/),他是一个无头浏览器
 
 
 # 启动服务
@@ -186,6 +211,16 @@ es6如何转译es5,参见我的blog,
 
 ## api服务
 使用express框架，目前是4.0版本
+
+1. express提供静态服务
+
+```
+var publicPath = __dirname+"/public";
+logger.info("publicPath",publicPath);
+app.use(express.static(publicPath));
+```
+
+
 
 
 

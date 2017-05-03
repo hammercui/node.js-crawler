@@ -22,7 +22,7 @@ logger = new (winston.Logger)({
       timestamp: dateFormat,
       colorize: true
     }),
-    new (winston.transports.File)({ timestamp: dateFormat,filename:'meizi.log'})
+    new (winston.transports.File)({ timestamp: dateFormat,filename:'all.log'})
 
   ]
 });
