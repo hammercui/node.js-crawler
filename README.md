@@ -9,7 +9,10 @@
  		* [mongoDB的文档与集合](#mongoDB的文档与集合)
  		* [Mongoose](#Mongoose)
  		* [日志框架选择](#日志框架选择)
- 	*  [JavaScript注意事项](#JavaScript注意事项)
+ 	*  [JavaScript注意事项](#JavaScript注意事项) 
+ 		* [es6如何转译es5](#es6如何转译es5)
+ 		* [nodejs文件写入写出](#nodejs文件写入写出)
+ 		* [PhantomJS的使用](#PhantomJS的使用)
 
 * [3.启动服务](#启动服务)
 	* [爬虫服务](#爬虫服务)
@@ -177,10 +180,16 @@ module.exports = logger;
 
 
 ## JavaScript注意事项
-### es6的常见问题
+### 正则表达式的运用
+
+* 匹配空白 `\\s`
+* 匹配非空白`\[^\s]`
+* 
+
+### es6如何转译es5
 es6如何转译es5,参见我的blog,
 
-### 文件写入写出
+### nodejs文件写入写出
 常见的问题就是转码的问题了，一般很多页面都是gb2312,我们需要借助`iconv-lite`进行编码转换
 
 ```
@@ -196,18 +205,126 @@ each(function(index,element)){
 
 ```
 
-### js拼接类页面的解决方法
+### PhantomJS的使用
 
 很多页面为了解决被爬的问题，使用了ajax异步加载，部分数据通过ajax传递，这样普通的get请求获得的页面就不能完整解析了。
 
-怎么办呢，我发现了[PhantomJS](http://phantomjs.org/),他是一个无头浏览器
+怎么办呢，我发现了[PhantomJS](http://phantomjs.org/),他是一个无头浏览器。简介如下:
+>PhantomJS is a headless WebKit scriptable with a JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG
+>
+>支持所有浏览器能支持的内容
+
+1. 下载安装[http://phantomjs.org/download.html](http://phantomjs.org/download.html) 或者更简单的方式`brew install phantomjs`
+2. nodejs环境强烈推荐这个[phantomjs-node](https://github.com/amir20/phantomjs-node)
+
+#### phantomjs-node的使用
+>我们在nodejs环境下使用phantom和直接使用phantomjs有很多区别，下面一一罗列
+
+1.创建page类
+
+```
+//phantomjs模式
+var page = require('webpage').create();
+//nodejs模式
+ const instance = await phantom.create(['--proxy=127.0.0.1:8080 --ignore-ssl-errors=yes', '--load-images=no'],{ logger: {info:log, warn: log, error: log } });
+  
+ const page =  await phantomInstance.createPage()
+```
+
+2 open一个url
+
+```
+//phantomjs模式
+page.open(address, function(status) {
+  if (status !== 'success') {
+    console.log('FAIL to load the address');
+  }
+  phantom.exit();
+});
+//nodejs模式
+const status = await page.open(url);
+  if(status == "success"){
+    var html = await page.property('content');
+  }
+  console.log(status);
+  await  instance.exit();
+```
+3 对广告进行拦截
+
+```
+//phantomjs模式
+page.onResourceRequested = function(request,networkRequest) {
+  console.log('Request ' + JSON.stringify(request, undefined, 4));
+};
+
+//nodejs模式
+//大部分改成了page.property(key)模式
+page.property('onResourceRequested', function(requestData, networkRequest) {
+    var regexpImg = /(\.(jpg|jpeg|png|gif|svg|)(\?|\/)?$)|(ads)/;
+    if ( regexpImg.test(requestData.url ) ) {
+      console.log( "  - BLOCKED URL: " + requestData.url );
+      networkRequest.abort();
+    }
+    // else{
+    //   console.log("- SUCCESS URL: " + requestData.url);
+    // }
+  });
+```
+4 phantomjs加入超时机制
+
+主要使用setTimeout机制
+
+```
+var callback = new Promise(function (resolve,reject) {
+      setTimeout(function () {
+        reject("请求超时");
+      },15000);
+
+      var result;
+      page.open(url)
+        .then(status=>{
+          if(status == "success"){
+            return page.property('content')
+          }
+          return Promise.reject(status);
+        })
+        .then(html=>{
+          result = html;
+          return page.close();
+        })
+        .then(()=>{
+          resolve(result);
+        })
+        .catch(e=>{
+          reject(e);
+        })
+    });
+    
+    return callback;
+```
+
 
 
 # 启动服务
 
 ## 爬虫服务
+1.启动meizitu爬虫
 
-`npm start`启动抓取爬虫
+```
+//进入目录
+cd ./script/meizi
+//
+node index.js
+```
+
+2.启动javbus爬虫
+
+```
+//进入目录
+cd ./script/javbus
+//
+node index.js
+```
 
 ## api服务
 使用express框架，目前是4.0版本

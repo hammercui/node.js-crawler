@@ -41,6 +41,7 @@ const detailSchema = Schema({
   tag:Array,
   id:{type:String,unique:true,required:true,index:true},
   date:String,
+  series:String,
   cover:String,
   mvLength:String,
   mvProducers:String,
@@ -65,7 +66,7 @@ function insertDetailList(list) {
 //mongoose通过model创建mongodb中对应的collection
 //mongoose在内部创建collection时将我们传递的collection名（‘home’）小写化，同时如果小写化的名称后面没有字母——s,则会在其后面添加一s
 function saveList(Model,list) {
-  logger.info("saveList",list);
+  //logger.info("saveList",list);
   //传递数组 批量插入
   if(list instanceof Array){
     return new Promise(function (resolve,reject) {
@@ -86,7 +87,6 @@ function saveList(Model,list) {
         }
       });
     })
-
   }
   //传递对象
   else if(list instanceof Object){
@@ -160,9 +160,27 @@ function select(Model,query) {
 }
 
 
+/**
+ * 更新
+ */
+function update(query,content) {
+  return new Promise(function (resolve,reject) {
+    detailModel.where(query).update(content,function (err,docs) {
+      if(err)
+        reject(err);
+      else
+        resolve(docs);
+    })
+  })
+}
+
+
+
+
 module.exports = {
   insertDetailList,
   selectDetail,
   selectDetailPage,
+  update,
 }
 
