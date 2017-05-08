@@ -4,15 +4,15 @@
  
 
 * [2.开发日志](#开发日志)
- 	*  [mongoDB搭配Mongoose存储数据](#mongoDB搭配Mongoose存储数据)
- 		* [mongoDB的启动](#mongoDB的启动) 
- 		* [mongoDB的文档与集合](#mongoDB的文档与集合)
- 		* [Mongoose](#Mongoose)
+ 	*  [mongoDB搭配Mongoose存储数据](#mongodb搭配mongoose存储数据)
+ 		* [mongoDB的启动](#mongodb的启动) 
+ 		* [mongoDB的文档与集合](#mongodb的文档与集合)
+ 		* [Mongoose](#mongoose)
  		* [日志框架选择](#日志框架选择)
- 	*  [JavaScript注意事项](#JavaScript注意事项) 
+ 	*  [JavaScript注意事项](#javascript注意事项) 
  		* [es6如何转译es5](#es6如何转译es5)
  		* [nodejs文件写入写出](#nodejs文件写入写出)
- 		* [PhantomJS的使用](#PhantomJS的使用)
+ 		* [PhantomJS的使用](#phantomjs的使用)
 
 * [3.启动服务](#启动服务)
 	* [爬虫服务](#爬虫服务)
