@@ -2,7 +2,7 @@
  * Created by cly on 2017/4/27.
  */
 "use strict";
-var {ERR_DB_DUP} = require("././errorFactory");
+var {ERR_DB_DUP} = require("../core/errorFactory");
 var DB_CONN_STR = 'mongodb://localhost:27017/meizi'; // 数据库为 meizi
 // 首先引入 mongoose 这个模块
 var mongoose = require('mongoose');
@@ -167,6 +167,8 @@ function select(Model,query) {
     })
   })
 }
+
+
 
 
 module.exports = {

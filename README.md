@@ -24,7 +24,7 @@
 * 爬取数据，并存入mongoDB
 
 - [ x ] 已完成[http://www.meizitu.com/](http://www.meizitu.com/)的抓取工作
-- [ x ] 准备javbus的抓取工作
+- [ x ] 已完成javbus的抓取工作
 
 # 开发日志
 
@@ -79,9 +79,10 @@ MongoDb区分类型，大小写。
 ### Mongoose
 >Mongoose是MongoDB的js版本的orm框架。现在叫odm意思就是object-documents-mapping对象文档映射
 
-**注意事项：**
 
-**Promise:**从4.1.0开始，mongoose自带的promise库被丢弃了，可以使用原生的es6Promise,或者bluebird或者q,但需要以中间件的形式引入。
+
+#### Promise 
+从4.1.0开始，mongoose自带的promise库被丢弃了，可以使用原生的es6Promise,或者bluebird或者q,但需要以中间件的形式引入。
 具体解释看官网[Built-in Promises](http://mongoosejs.com/docs/promises.html)
 
 ```
@@ -90,7 +91,8 @@ MongoDb区分类型，大小写。
 ```
 就可以直接使用Promise处理异步了。
 
-**索引：**如何处理插入重复数据的问题呢？我的做法是建立唯一id索引。
+#### 索引
+如何处理插入重复数据的问题呢？我的做法是建立唯一id索引。
 索引有两种创建方式：
 
 1. 进入数据库执行`db.集合名.ensureIndex({id:1},{unique:true})`，这样就建立了`id`为索引

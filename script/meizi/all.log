@@ -1,0 +1,89 @@
+{"level":"info","message":"http://www.meizitu.com/a/list_1_1.html 2017-06-02 15:24:42 start http://www.meizitu.com/a/list_1_1.html","timestamp":"2017-06-02 15:24:42:535"}
+{"level":"info","message":"抓取页面url: http://www.meizitu.com/a/list_1_1.html","timestamp":"2017-06-02 15:24:42:537"}
+{"level":"info","message":"http://www.meizitu.com/a/list_1_1.html 2017-06-02 15:24:59 start http://www.meizitu.com/a/list_1_1.html","timestamp":"2017-06-02 15:24:59:672"}
+{"level":"info","message":"抓取页面url: http://www.meizitu.com/a/list_1_1.html","timestamp":"2017-06-02 15:24:59:673"}
+{"id":"5510","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:02:323"}
+{"id":"5522","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:03:407"}
+{"id":"5507","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:04:463"}
+{"id":"5525","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:05:671"}
+{"id":"5523","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:06:528"}
+{"id":"5506","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:07:551"}
+{"id":"5508","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:08:723"}
+{"id":"5514","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:09:242"}
+{"id":"5527","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:10:349"}
+{"id":"5500","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:11:077"}
+{"id":"5516","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:12:085"}
+{"id":"5509","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:13:392"}
+{"id":"5515","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:14:350"}
+{"id":"5512","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:15:203"}
+{"id":"5519","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:16:189"}
+{"id":"5524","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:16:760"}
+{"id":"5518","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:18:742"}
+{"id":"5501","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:18:879"}
+{"id":"5499","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:19:754"}
+{"id":"5504","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:20:829"}
+{"id":"5517","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:22:118"}
+{"id":"5505","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:23:123"}
+{"id":"5503","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:24:072"}
+{"id":"5521","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:24:911"}
+{"id":"5513","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:25:993"}
+{"id":"5511","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:26:917"}
+{"id":"5520","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:27:909"}
+{"id":"5502","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:29:525"}
+{"id":"5526","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:30:005"}
+{"id":"5529","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:31:712"}
+{"level":"info","message":"无效的抓取 id5510 has exist,do not capture","timestamp":"2017-06-02 15:25:31:714"}
+{"level":"info","message":"无效的抓取 id5522 has exist,do not capture","timestamp":"2017-06-02 15:25:31:715"}
+{"level":"info","message":"无效的抓取 id5507 has exist,do not capture","timestamp":"2017-06-02 15:25:31:716"}
+{"level":"info","message":"无效的抓取 id5525 has exist,do not capture","timestamp":"2017-06-02 15:25:31:716"}
+{"level":"info","message":"无效的抓取 id5523 has exist,do not capture","timestamp":"2017-06-02 15:25:31:716"}
+{"level":"info","message":"无效的抓取 id5506 has exist,do not capture","timestamp":"2017-06-02 15:25:31:716"}
+{"level":"info","message":"无效的抓取 id5508 has exist,do not capture","timestamp":"2017-06-02 15:25:31:716"}
+{"level":"info","message":"无效的抓取 id5514 has exist,do not capture","timestamp":"2017-06-02 15:25:31:717"}
+{"level":"info","message":"无效的抓取 id5527 has exist,do not capture","timestamp":"2017-06-02 15:25:31:717"}
+{"level":"info","message":"无效的抓取 id5500 has exist,do not capture","timestamp":"2017-06-02 15:25:31:717"}
+{"level":"info","message":"无效的抓取 id5516 has exist,do not capture","timestamp":"2017-06-02 15:25:31:717"}
+{"level":"info","message":"无效的抓取 id5509 has exist,do not capture","timestamp":"2017-06-02 15:25:31:718"}
+{"level":"info","message":"无效的抓取 id5515 has exist,do not capture","timestamp":"2017-06-02 15:25:31:718"}
+{"level":"info","message":"无效的抓取 id5512 has exist,do not capture","timestamp":"2017-06-02 15:25:31:718"}
+{"level":"info","message":"无效的抓取 id5519 has exist,do not capture","timestamp":"2017-06-02 15:25:31:718"}
+{"level":"info","message":"无效的抓取 id5524 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5518 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5501 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5499 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5504 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5517 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5505 has exist,do not capture","timestamp":"2017-06-02 15:25:31:719"}
+{"level":"info","message":"无效的抓取 id5503 has exist,do not capture","timestamp":"2017-06-02 15:25:31:720"}
+{"level":"info","message":"无效的抓取 id5521 has exist,do not capture","timestamp":"2017-06-02 15:25:31:720"}
+{"level":"info","message":"无效的抓取 id5513 has exist,do not capture","timestamp":"2017-06-02 15:25:31:720"}
+{"level":"info","message":"无效的抓取 id5511 has exist,do not capture","timestamp":"2017-06-02 15:25:31:720"}
+{"level":"info","message":"无效的抓取 id5520 has exist,do not capture","timestamp":"2017-06-02 15:25:31:721"}
+{"level":"info","message":"无效的抓取 id5502 has exist,do not capture","timestamp":"2017-06-02 15:25:31:721"}
+{"level":"info","message":"无效的抓取 id5526 has exist,do not capture","timestamp":"2017-06-02 15:25:31:721"}
+{"level":"info","message":"无效的抓取 id5529 has exist,do not capture","timestamp":"2017-06-02 15:25:31:721"}
+{"meta":0,"level":"info","message":"2017-06-02 15:25:31 capture success,ready insert list length:","timestamp":"2017-06-02 15:25:31:722"}
+{"level":"info","message":"2017-06-02 15:25:31 insert successa/list_1_1.htmllist为空，直接插入成功","timestamp":"2017-06-02 15:25:31:722"}
+{"level":"info","message":"2017-06-02 15:25:31 end http://www.meizitu.com/a/list_1_1.html","timestamp":"2017-06-02 15:25:31:722"}
+{"level":"info","message":"开始延迟 5112 毫秒","timestamp":"2017-06-02 15:25:31:725"}
+{"level":"info","message":"延时结束","timestamp":"2017-06-02 15:25:36:845"}
+{"level":"info","message":"http://www.meizitu.com/a/list_1_2.html 2017-06-02 15:25:36 start http://www.meizitu.com/a/list_1_2.html","timestamp":"2017-06-02 15:25:36:846"}
+{"level":"info","message":"抓取页面url: http://www.meizitu.com/a/list_1_2.html","timestamp":"2017-06-02 15:25:36:846"}
+{"id":"5493","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:38:461"}
+{"id":"5483","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:39:634"}
+{"id":"5489","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:40:805"}
+{"id":"5495","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:41:979"}
+{"id":"5468","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:42:748"}
+{"id":"5485","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:43:474"}
+{"id":"5469","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:44:382"}
+{"id":"5477","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:45:205"}
+{"id":"5486","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:46:464"}
+{"id":"5487","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:47:294"}
+{"id":"5473","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:48:415"}
+{"id":"5475","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:49:633"}
+{"id":"5491","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:50:465"}
+{"id":"5476","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:51:719"}
+{"id":"5484","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:53:054"}
+{"id":"5474","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:53:859"}
+{"id":"5478","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:54:432"}
+{"id":"5482","level":"info","message":"detailModel query:","timestamp":"2017-06-02 15:25:55:337"}

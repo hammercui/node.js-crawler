@@ -26,7 +26,7 @@ module.exports =  class analysisFactory{
       for(var i=0,len = twoArray.length;i<len;i++){
         if(twoArray[i] instanceof  Array && twoArray.length>0){
           logger.info("开始detail分组",i);
-          var list = await  that.analysisDetailList(twoArray[i]);
+          var list = await that.analysisDetailList(twoArray[i]);
           detailItems = _.union(detailItems,list);
         }
       }
@@ -76,7 +76,7 @@ module.exports =  class analysisFactory{
     var promiseArray = thumbArray.map((detail,idx)=> {
       var TAG = (idx+1)+"/"+count;
       //开始休眠
-      var sleepTime = Math.floor(Math.random()*1000)+idx*2000;
+      var sleepTime = Math.floor(Math.random()*1000)+idx*1000;
       //获得写入的数据id
       var db_id =  detail.id;
       logger.info(TAG,"延迟",sleepTime,"毫秒");
@@ -84,8 +84,8 @@ module.exports =  class analysisFactory{
       //数据库查询是否存在，如果存在，直接返回
         .then(()=>{
           logger.info(TAG,"延迟结束,查询",db_id,"是否存在");
-          var regex = new RegExp("*", 'i');
-          return dao.selectDetail({id:db_id,series:regex});
+          //var regex = new RegExp("*", 'i');
+          return dao.selectDetail({id:db_id});
         })
         .then(exist=>{
             if(exist == null){
@@ -104,7 +104,7 @@ module.exports =  class analysisFactory{
         .then(
           resolve=> {
             var item = that.analysisDetail(resolve, detail);
-            //logger.info(TAG,"页面解析结束 获得 item:",item);
+            logger.info(TAG,"页面解析结束 获得 item:",item.id);
             return Promise.resolve({code: 202, item: item});
           },
           reject=> Promise.resolve({code:404,msg:reject,href:detail.href})
@@ -126,14 +126,14 @@ module.exports =  class analysisFactory{
         },
         reject=>Promise.reject(reject)
       );
+
     return result;
   }
 
 
 
-  async analysisDetail(html,detail){
+  analysisDetail(html,detail){
     try{
-
     var href = detail.href;
     var thumb = detail.thumb;
     var id = detail.id;
@@ -154,6 +154,7 @@ module.exports =  class analysisFactory{
     // var date = ps[1].children[1].data;
       var lenElement = $("span.header:contains('長度:')").parent();
     var mvLength = $(lenElement).text().replace(/(長度:|\s)/g,"");
+
 
     var mvDirector = $("span.header:contains('導演:')").next().text();
     var mvProducers = $("span.header:contains('製作商:')").next().text();
@@ -215,6 +216,8 @@ module.exports =  class analysisFactory{
       })
     }
 
+    let dateNumber = Number.parseInt(date.replace(/-/g,""));
+
     var item = {
       href:href,
       title:title,
@@ -222,6 +225,7 @@ module.exports =  class analysisFactory{
       tag:tags,
       id:id,
       date:date,
+      dateNumber:dateNumber,
       cover:cover,
       series:series,
       mvLength:mvLength,
@@ -235,11 +239,12 @@ module.exports =  class analysisFactory{
     };
    // logger.info("will insert data:",item);
     //进行插入系列的操作
+      /**
     if(series){
       await dao.update({id:id},{series:series});
       console.log("插入系列","成功");
     }
-
+  **/
       return item;
     }catch(e){
       logger.warn(e);

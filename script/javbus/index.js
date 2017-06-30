@@ -12,6 +12,7 @@ var utils = require("../core/utils");
 
 var analysis = new analysisFactory();
 var baseUrl = 'https://www.javbus.com/';
+var dao = require("./odm_db");
 
 const loggerInfo = logger.info;
 
@@ -40,7 +41,7 @@ function captureList(index) {
       logger.info(TAG,utils.getTime(),"insert detailList success ");
       logger.info(TAG,utils.getTime(),"end",url);
       //开始休眠
-      var sleepTime = Math.floor(Math.random()*10000);
+      var sleepTime = Math.floor(Math.random()*1000);
       logger.info(TAG,"开始延迟",sleepTime,"毫秒");
       return new Promise(resolve=>setTimeout(()=>resolve(),sleepTime))
     },reject=>Promise.reject(reject))
@@ -48,7 +49,7 @@ function captureList(index) {
       logger.info(TAG,"延时结束");
       //下一个循环
       var curIndex = index + 1;
-      if(curIndex < 35){
+      if(curIndex < 30){
         retryTime = 0;
         captureList(curIndex);
       }
@@ -78,8 +79,10 @@ function getIndexUrl(index) {
 
 
 //captureHome();
-captureList(32);
+captureList(1);
 //test();
+
+//dao.updateDateToNumber();
 
 
 function test() {

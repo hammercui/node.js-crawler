@@ -2,7 +2,7 @@
  * Created by cly on 17/3/22.
  */
 "use strict";
-var request = require("./request");
+var request = require("../core/request");
 var fs = require('fs');
 var analysisFactory = require("./analysisFactory");
 var dao  = require("./odm_db");
@@ -57,7 +57,7 @@ function captureList(index) {
       logger.info("延时结束");
       //下一个循环
       var curIndex = index + 1;
-      if(curIndex < 35)
+      if(curIndex < 10)
         captureList(curIndex);
       else{
         logger.info("抓取到页码".concat(index,",抓取完成"));

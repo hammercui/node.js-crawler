@@ -4,7 +4,7 @@
 
 
 "use strict";
-var request = require("./request");
+var request = require("../core/request");
 var iconv = require('iconv-lite');
 var cookie = "bdshare_firstime=1493106646157; safedog-flow-item=";
 var logger = require("./../core/logFactory");

@@ -3,7 +3,7 @@
  */
 "use strict";
 var {ERR_DB_DUP} = require("../core/errorFactory");
-var DB_CONN_STR = 'mongodb://localhost:27017/javbus'; // 数据库为 javbus
+var DB_CONN_STR = 'mongodb://hammer1:*#06#localhost:27017/javbus'; // 数据库为 javbus
 // 首先引入 mongoose 这个模块
 var mongoose = require('mongoose');
 var logger = require('./../core/logFactory');
@@ -51,6 +51,7 @@ const detailSchema = Schema({
   mvImageSmall:Array,
   mvImageBig:Array,
   mvMagnets:Array,
+  dateNumber:{type:Number}//日期的数字形式
 });
 
 
@@ -175,6 +176,24 @@ function update(query,content) {
 }
 
 
+async function updateDateToNumber() {
+
+   let resultList = await  detailModel.find({});
+   let pall = resultList.map(function (element) {
+     let id= element._doc.id;
+     let date = element._doc.date;
+     let dateNumber = Number.parseInt(date.replace(/-/g,""));
+     return  detailModel.where({id:id}).update({dateNumber:dateNumber});
+   })
+   await Promise
+     .all(pall)
+     .then(resolve=>console.log("更新完成"))
+     .catch(e=>console.log(e.toString()));
+  //  resultList.forEach(function (element) {
+  //
+  // })
+
+}
 
 
 module.exports = {
@@ -182,5 +201,6 @@ module.exports = {
   selectDetail,
   selectDetailPage,
   update,
+  updateDateToNumber
 }
 
